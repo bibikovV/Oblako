@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="NetFileManagerClient.Views.FilesListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="600">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="2" />
+            <Setter Property="Padding" Value="10,5" />
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0" LastChildFill="False">
+            <TextBlock DockPanel.Dock="Left" 
+                       Margin="2" Padding="3" 
+                       VerticalAlignment="Center" 
+                       Text="IP-адрес сервера" />
+            <TextBox DockPanel.Dock="Left" 
+                     Margin="2" Padding="3" 
+                     Width="150px" 
+                     Text="{Binding ServerIp, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" />
+        </DockPanel>
+        <DockPanel Grid.Row="1" LastChildFill="False">
+            <Button DockPanel.Dock="Left" 
+                    Content="Открыть" 
+                    ToolTip="Загрузить и открыть файл" 
+                    IsEnabled="{Binding IsServerReady, Mode=OneWay}" 
+                    Command="{Binding OpenCommand, Mode=OneWay}" />
+            <Button DockPanel.Dock="Left" 
+                    Content="Открыть папку" 
+                    ToolTip="Открыть папку с загруженными файлами" 
+                    Command="{Binding OpenFolderCommand, Mode=OneWay}" />
+            <Button DockPanel.Dock="Right" 
+                    Content="Обновить список" 
+                    IsEnabled="{Binding IsServerReady, Mode=OneWay}" 
+                    Command="{Binding RefreshCommand, Mode=OneWay}" />
+            <Button Content="Добавить файл" Height="29" Margin="0,2,0,0" VerticalAlignment="Top" Width="109" RenderTransformOrigin="0.493,0.533"
+                     IsEnabled="{Binding IsServerReady, Mode=OneWay}" 
+                    Command="{Binding RefreshCommand, Mode=OneWay}">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="0.304"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-0.006"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+        </DockPanel>
+        <DataGrid Grid.Row="2" 
+                  x:Name="dGrid" 
+                  SelectionMode="Single" 
+                  Margin="2" 
+                  CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeColumns="False" 
+                  AutoGenerateColumns="False" 
+                  ItemsSource="{Binding Files, Mode=OneWay}" 
+                  SelectedItem="{Binding SelectedFile, Mode=TwoWay}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="*" Header="Название" IsReadOnly="True" Binding="{Binding ., Mode=OneWay}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock Grid.Row="3" 
+                   Margin="2" Padding="3" 
+                   HorizontalAlignment="Right" 
+                   Text="{Binding ElementName=dGrid, Path=Items.Count, Mode=OneWay, StringFormat='Файлов: {0}'}" />
+    </Grid>
+</UserControl>

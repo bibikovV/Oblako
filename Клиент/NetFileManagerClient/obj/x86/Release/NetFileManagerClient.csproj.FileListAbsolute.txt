@@ -1,0 +1,17 @@
+C:\Users\biban\Desktop\NetFileManagerClient\NetFileManagerClient\bin\Release\NetFileManagerClient.exe.config
+C:\Users\biban\Desktop\NetFileManagerClient\NetFileManagerClient\bin\Release\NetFileManagerClient.exe
+C:\Users\biban\Desktop\NetFileManagerClient\NetFileManagerClient\bin\Release\NetFileManagerClient.pdb
+C:\Users\biban\Desktop\NetFileManagerClient\NetFileManagerClient\obj\x86\Release\Views\FilesListView.baml
+C:\Users\biban\Desktop\NetFileManagerClient\NetFileManagerClient\obj\x86\Release\MainWindow.g.cs
+C:\Users\biban\Desktop\NetFileManagerClient\NetFileManagerClient\obj\x86\Release\Views\FilesListView.g.cs
+C:\Users\biban\Desktop\NetFileManagerClient\NetFileManagerClient\obj\x86\Release\App.g.cs
+C:\Users\biban\Desktop\NetFileManagerClient\NetFileManagerClient\obj\x86\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\biban\Desktop\NetFileManagerClient\NetFileManagerClient\obj\x86\Release\NetFileManagerClient_MarkupCompile.cache
+C:\Users\biban\Desktop\NetFileManagerClient\NetFileManagerClient\obj\x86\Release\NetFileManagerClient_MarkupCompile.lref
+C:\Users\biban\Desktop\NetFileManagerClient\NetFileManagerClient\obj\x86\Release\MainWindow.baml
+C:\Users\biban\Desktop\NetFileManagerClient\NetFileManagerClient\obj\x86\Release\NetFileManagerClient.g.resources
+C:\Users\biban\Desktop\NetFileManagerClient\NetFileManagerClient\obj\x86\Release\NetFileManagerClient.Properties.Resources.resources
+C:\Users\biban\Desktop\NetFileManagerClient\NetFileManagerClient\obj\x86\Release\NetFileManagerClient.csproj.GenerateResource.cache
+C:\Users\biban\Desktop\NetFileManagerClient\NetFileManagerClient\obj\x86\Release\NetFileManagerClient.csproj.CoreCompileInputs.cache
+C:\Users\biban\Desktop\NetFileManagerClient\NetFileManagerClient\obj\x86\Release\NetFileManagerClient.exe
+C:\Users\biban\Desktop\NetFileManagerClient\NetFileManagerClient\obj\x86\Release\NetFileManagerClient.pdb
