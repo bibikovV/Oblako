@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="NetFileManagerServer.Views.FilesListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="600">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="2" />
+            <Setter Property="Padding" Value="10,5" />
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0" LastChildFill="False">
+            <Button DockPanel.Dock="Left" 
+                    Content="Добавить" 
+                    Command="{Binding AddCommand, Mode=OneWay}" />
+            <Button DockPanel.Dock="Left" 
+                    Content="Удалить" 
+                    Command="{Binding RemoveCommand, Mode=OneWay}" />
+        </DockPanel>
+        <DataGrid Grid.Row="1" 
+                  x:Name="dGrid" 
+                  SelectionMode="Single" 
+                  Margin="2" 
+                  CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeColumns="False" 
+                  AutoGenerateColumns="False" 
+                  ItemsSource="{Binding Files, Mode=OneWay}" 
+                  SelectedItem="{Binding SelectedFile, Mode=TwoWay}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Название" IsReadOnly="True" Binding="{Binding Name, Mode=OneWay}" />
+                <DataGridTextColumn Header="Путь" Width="*" IsReadOnly="True" Binding="{Binding Path, Mode=OneWay}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock Grid.Row="2" 
+                   Margin="2" Padding="3" 
+                   HorizontalAlignment="Right" 
+                   Text="{Binding ElementName=dGrid, Path=Items.Count, Mode=OneWay, StringFormat='Файлов: {0}'}" />
+    </Grid>
+</UserControl>

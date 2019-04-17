@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetFileManagerServer", "NetFileManagerServer\NetFileManagerServer.csproj", "{D6035B8B-3435-4630-A8A5-9497B588B8A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6035B8B-3435-4630-A8A5-9497B588B8A4}.Debug|x86.ActiveCfg = Debug|x86
+		{D6035B8B-3435-4630-A8A5-9497B588B8A4}.Debug|x86.Build.0 = Debug|x86
+		{D6035B8B-3435-4630-A8A5-9497B588B8A4}.Release|x86.ActiveCfg = Release|x86
+		{D6035B8B-3435-4630-A8A5-9497B588B8A4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C03DAD76-CD98-457C-9F10-056646AF8EFE}
+	EndGlobalSection
+EndGlobal
