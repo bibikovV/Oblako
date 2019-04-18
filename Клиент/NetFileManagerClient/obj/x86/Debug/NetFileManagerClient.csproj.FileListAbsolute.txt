@@ -16,3 +16,23 @@ C:\Users\biban\Desktop\Клиент\NetFileManagerClient\obj\x86\Debug\NetFileMa
 C:\Users\biban\Desktop\Клиент\NetFileManagerClient\obj\x86\Debug\NetFileManagerClient.csproj.CoreCompileInputs.cache
 C:\Users\biban\Desktop\Клиент\NetFileManagerClient\obj\x86\Debug\NetFileManagerClient.exe
 C:\Users\biban\Desktop\Клиент\NetFileManagerClient\obj\x86\Debug\NetFileManagerClient.pdb
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\bin\Debug\NetFileManagerClient.exe.config
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\bin\Debug\NetFileManagerClient.exe
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\bin\Debug\NetFileManagerClient.pdb
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\obj\x86\Debug\NetFileManagerClient.csprojAssemblyReference.cache
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\obj\x86\Debug\Views\FilesListView.baml
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\obj\x86\Debug\Auth.g.cs
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\obj\x86\Debug\MainWindow.g.cs
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\obj\x86\Debug\Views\FilesListView.g.cs
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\obj\x86\Debug\App.g.cs
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\obj\x86\Debug\NetFileManagerClient_MarkupCompile.cache
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\obj\x86\Debug\NetFileManagerClient_MarkupCompile.lref
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\obj\x86\Debug\Auth.baml
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\obj\x86\Debug\MainWindow.baml
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\obj\x86\Debug\NetFileManagerClient.g.resources
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\obj\x86\Debug\NetFileManagerClient.Properties.Resources.resources
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\obj\x86\Debug\NetFileManagerClient.csproj.GenerateResource.cache
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\obj\x86\Debug\NetFileManagerClient.csproj.CoreCompileInputs.cache
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\obj\x86\Debug\NetFileManagerClient.exe
+C:\Users\biban\Desktop\Tcp Клиент-Сервер\Клиент\NetFileManagerClient\obj\x86\Debug\NetFileManagerClient.pdb

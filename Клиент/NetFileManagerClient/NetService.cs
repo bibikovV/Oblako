@@ -265,7 +265,7 @@ namespace NetFileManagerClient
                 return;
             }
 
-            string filePath = Path.Combine(new DirectoryInfo(App.FILESPATH).FullName, fileName);
+            string filePath = Path.Combine(new DirectoryInfo(Application.FILESPATH).FullName, fileName);
             System.Net.IPEndPoint serverEP = new IPEndPoint(this.serverIp, NetService.SERVERTCPPORT);
             byte[] messageBytes = Encoding.UTF8.GetBytes(fileName);
             Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);

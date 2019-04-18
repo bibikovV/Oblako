@@ -4,11 +4,11 @@ using System.Windows;
 
 namespace NetFileManagerClient
 {
-    public partial class App : Application
+    public partial class Application : System.Windows.Application
     {
         internal static string FILESPATH = "DownloadedFiles";
 
-        public App()
+        public Application()
         {
             this.Startup += App_Startup;
             this.Exit += App_Exit;
@@ -16,7 +16,7 @@ namespace NetFileManagerClient
 
         void App_Startup(object sender, StartupEventArgs e)
         {
-            DirectoryInfo dir = new DirectoryInfo(App.FILESPATH);
+            DirectoryInfo dir = new DirectoryInfo(Application.FILESPATH);
 
             if (!dir.Exists)
                 dir.Create();
@@ -30,7 +30,7 @@ namespace NetFileManagerClient
 
         void App_Exit(object sender, ExitEventArgs e)
         {
-            DirectoryInfo dir = new DirectoryInfo(App.FILESPATH);
+            DirectoryInfo dir = new DirectoryInfo(Application.FILESPATH);
 
             foreach (FileInfo file in dir.GetFiles())
             {

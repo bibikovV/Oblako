@@ -59,12 +59,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Auth.xaml.cs">
+      <DependentUpon>Auth.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Command.cs" />
     <Compile Include="NetService.cs" />
     <Compile Include="ViewModels\FilesListViewModel.cs" />
     <Compile Include="Views\FilesListView.xaml.cs">
       <DependentUpon>FilesListView.xaml</DependentUpon>
     </Compile>
+    <Page Include="Auth.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

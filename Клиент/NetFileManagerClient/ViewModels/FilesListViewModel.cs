@@ -21,7 +21,7 @@ namespace NetFileManagerClient.ViewModels
         private List<string> files;
         private string selectedFile;
         private bool isServerReady;
-        
+        public string UserName;
 
         
         /// <summary>
@@ -33,7 +33,7 @@ namespace NetFileManagerClient.ViewModels
             this.Files = CollectionViewSource.GetDefaultView(this.files);
 
             this.OpenCommand = new Command(this.OpenFile);
-            this.OpenFolderCommand = new Command((args) => { System.Diagnostics.Process.Start(App.FILESPATH); });
+            this.OpenFolderCommand = new Command((args) => { System.Diagnostics.Process.Start(Application.FILESPATH); });
             this.RefreshCommand = new Command(this.RefreshList);
             this.SendFileCommand = new Command(this.SendFile);
 
@@ -42,8 +42,12 @@ namespace NetFileManagerClient.ViewModels
             NetService.Instance.OnStatusChanged += Instance_OnStatusChanged;
 
             this.ServerIp = "127.0.0.1";
+            
+           
         }
-       
+
+
+            
 
         
         /// <summary>
